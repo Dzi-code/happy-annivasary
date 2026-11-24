@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6e071d" />
+    <meta
+      name="description"
+      content="A little anniversary celebration, made with love." />
+    <title>Happy Anniversary, My Love</title>
+    <link rel="stylesheet" href="index.css?v=3" />
+  </head>
+  <body>
+    <div class="heart-field" id="heartField" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">♥</span
+          ><span>A little celebration of us</span>
+        </div>
+        <div class="step-label" id="stepLabel">A note for you</div>
+      </header>
+
+      <main>
+        <section
+          class="screen active"
+          id="welcome"
+          aria-labelledby="welcomeTitle">
+          <div class="hero-card">
+            <p class="eyebrow">To my favorite person</p>
+            <h1 id="welcomeTitle">Happy <span>Anniversary</span></h1>
+            <p class="intro-copy">
+              Every day with you has become one of my favorite memories. Thank
+              you for the laughter, the little things, and the love we keep
+              choosing. Here’s to us, and to everything still ahead.
+            </p>
+            <div class="ornament" aria-hidden="true">♥</div>
+            <div class="question-block">
+              <p class="question-title">Do you still love me?</p>
+              <p class="question-hint">Choose your answer, my love.</p>
+              <div class="choice-row">
+                <button
+                  class="choice-button"
+                  type="button"
+                  data-next="memories">
+                  Yes 💗
+                </button>
+                <button
+                  class="choice-button"
+                  type="button"
+                  data-next="memories">
+                  Yes, always 💞
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="screen"
+          id="memories"
+          aria-labelledby="memoriesTitle"
+          aria-hidden="true">
+          <div class="content-card memories-card">
+            <p class="eyebrow">The little things are the big things</p>
+            <h2 id="memoriesTitle">A few favorite moments</h2>
+            <p class="section-copy">
+              A little rewind of us. Take your time here.
+            </p>
+
+            <div
+              class="carousel"
+              aria-roledescription="carousel"
+              aria-label="Our memories">
+              <button
+                class="carousel-arrow prev"
+                id="previousSlide"
+                type="button"
+                aria-label="Previous memory">
+                ‹
+              </button>
+              <div class="photo-frame" id="photoFrame" aria-live="polite">
+                <img id="memoryImage" alt="" aria-hidden="true" />
+                <video
+                  id="memoryVideo"
+                  aria-label="Anniversary memory video"
+                  playsinline
+                  controls
+                  preload="metadata"
+                  hidden></video>
+                <div class="photo-placeholder" id="photoPlaceholder">
+                  <span class="big-heart" aria-hidden="true">♥</span>
+                  <strong id="placeholderTitle"
+                    >Our favorite little moments</strong
+                  >
+                </div>
+                <div class="photo-caption" id="photoCaption">
+                  A moment worth keeping
+                </div>
+              </div>
+              <button
+                class="carousel-arrow next"
+                id="nextSlide"
+                type="button"
+                aria-label="Next memory">
+                ›
+              </button>
+            </div>
+            <div
+              class="dots"
+              id="carouselDots"
+              aria-label="Choose a memory"></div>
+            <div class="question-block compact">
+              <p class="question-title">
+                Would you like to continue to the next part of our day?
+              </p>
+              <p class="question-hint">
+                There are a few things I’d love to ask you.
+              </p>
+              <div class="choice-row">
+                <button
+                  class="choice-button"
+                  type="button"
+                  data-next="questions">
+                  Yes 💗
+                </button>
+                <button
+                  class="choice-button"
+                  type="button"
+                  data-next="questions">
+                  Yes, let’s go 💞
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="screen"
+          id="questions"
+          aria-labelledby="questionsTitle"
+          aria-hidden="true">
+          <div class="content-card">
+            <p class="eyebrow">A little keepsake for us</p>
+            <h2 id="questionsTitle">A few things I’d love to know</h2>
+            <p class="section-copy">
+              Answer in your own words. I’ll keep every one close.
+            </p>
+            <form class="relationship-form" id="relationshipForm">
+              <div class="answer-item">
+                <label for="answer1"
+                  ><span class="question-number">1</span>What was your first
+                  impression of me?</label
+                >
+                <textarea
+                  id="answer1"
+                  name="First impression"
+                  placeholder="The very first thing I thought was…"
+                  required></textarea>
+              </div>
+              <div class="answer-item">
+                <label for="answer2"
+                  ><span class="question-number">2</span>What is one of your
+                  favorite memories of us?</label
+                >
+                <textarea
+                  id="answer2"
+                  name="Favorite memory"
+                  placeholder="I always smile when I remember…"
+                  required></textarea>
+              </div>
+              <div class="answer-item">
+                <label for="answer3"
+                  ><span class="question-number">3</span>What little thing do I
+                  do that makes you feel loved?</label
+                >
+                <textarea
+                  id="answer3"
+                  name="A little thing that feels like love"
+                  placeholder="It means a lot when you…"
+                  required></textarea>
+              </div>
+              <div class="answer-item">
+                <label for="answer4"
+                  ><span class="question-number">4</span>What do you think we
+                  bring out in each other?</label
+                >
+                <textarea
+                  id="answer4"
+                  name="What we bring out in each other"
+                  placeholder="Together, we…"
+                  required></textarea>
+              </div>
+              <div class="answer-item">
+                <label for="answer5"
+                  ><span class="question-number">5</span>What is something new
+                  you’d love for us to do together?</label
+                >
+                <textarea
+                  id="answer5"
+                  name="Something new to do together"
+                  placeholder="One day, we should…"
+                  required></textarea>
+              </div>
+              <div class="answer-item">
+                <label for="answer6"
+                  ><span class="question-number">6</span>What is one wish you
+                  have for our next year together?</label
+                >
+                <textarea
+                  id="answer6"
+                  name="A wish for our next year"
+                  placeholder="My hope for us is…"
+                  required></textarea>
+              </div>
+              <p class="form-error" id="formError" role="alert"></p>
+              <div class="submit-row">
+                <p class="submit-note">
+                  Your answers will be sent to my inbox as our little
+                  anniversary keepsake.
+                </p>
+                <button class="primary-button" id="submitAnswers" type="submit">
+                  Send my answers <span aria-hidden="true">♡</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section
+          class="screen"
+          id="receipt"
+          aria-labelledby="receiptTitle"
+          aria-hidden="true">
+          <div class="content-card receipt-card">
+            <div class="receipt-icon" aria-hidden="true">♥</div>
+            <p class="eyebrow">A little piece of your heart</p>
+            <h2 id="receiptTitle">Thank you, Mama❤️🌹</h2>
+            <p class="receipt-copy" id="receiptMessage">
+              Your answers are on their way to my inbox. I can’t wait to read
+              them.
+            </p>
+            <div class="answer-recap" id="answerRecap"></div>
+            <div class="choice-row">
+              <button class="secondary-button" type="button" id="startOver">
+                Replay our little celebration
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        Made with <span>♥</span> for my favorite person
+      </footer>
+    </div>
+
+    <script src="index.js?v=4" defer></script>
+  </body>
+</html>
