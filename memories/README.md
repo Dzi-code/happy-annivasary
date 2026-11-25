@@ -2,7 +2,7 @@
 
 There is no three item limit. Add as many media entries as you want to the `MEMORY_MEDIA` list near the top of `index.js`, then put each file in this folder.
 
-The playlist includes `memory-01.jpg` through `memory-03.jpg` and `video-01.mp4` through `video-03.mp4`. Add your files with those names to use the existing entries.
+The playlist includes `memory-01.jpg` through `memory-04.jpg` and `video-01.mp4` through `video-07.mp4`. Add an entry to the `MEMORY_MEDIA` list for each new file you add.
 
 For example, add a photo like this:
 

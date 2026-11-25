@@ -22,6 +22,12 @@ const MEMORY_MEDIA = [
     placeholder: "My favorite person, always",
   },
   {
+    type: "image",
+    src: "memories/memory-04.jpg",
+    caption: "Another favorite memory",
+    placeholder: "A moment to keep close",
+  },
+  {
     type: "video",
     src: "memories/video-01.mp4",
     caption: "A little moment in motion",
@@ -38,6 +44,30 @@ const MEMORY_MEDIA = [
     src: "memories/video-03.mp4",
     caption: "One more moment together",
     placeholder: "More memories in motion",
+  },
+  {
+    type: "video",
+    src: "memories/video-04.mp4",
+    caption: "A new moment in motion",
+    placeholder: "One more memory to replay",
+  },
+  {
+    type: "video",
+    src: "memories/video-05.mp4",
+    caption: "A little more of us",
+    placeholder: "Another moment together",
+  },
+  {
+    type: "video",
+    src: "memories/video-06.mp4",
+    caption: "A memory to replay",
+    placeholder: "Our moments in motion",
+  },
+  {
+    type: "video",
+    src: "memories/video-07.mp4",
+    caption: "One for the memory book",
+    placeholder: "A favorite moment together",
   },
 ];
 
@@ -104,7 +134,7 @@ function paintSlide() {
   memoryVideo.onerror = null;
   memoryVideo.onended = null;
   memoryVideo.pause();
-  memoryVideo.muted = true;
+  memoryVideo.muted = false;
   memoryVideo.loop = false;
   memoryVideo.removeAttribute("src");
   memoryVideo.load();
